@@ -1,0 +1,85 @@
+@import "color.scss";
+@import "font.scss";
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .container {
+    width: 1400px;
+    .boxInput {
+      display: flex;
+      justify-content: center;
+      padding-top: 20px;
+      .kickOffBox {
+        width: 400px;
+        .label {
+          font-family: $f_KontrapunktMiki_Bold;
+          color: #fff;
+        }
+        .inputText {
+          margin-top: 5px;
+        }
+        .buttons {
+          margin-top: 5px;
+          display: flex;
+          column-gap: 10px;
+          justify-content: center;
+        }
+        .error {
+          color: red;
+        }
+        .heightBox {
+          margin-top: 20px;
+        }
+        .upCircleOutlined {
+          margin-top: 20px;
+          display: flex;
+          justify-content: center;
+        }
+        .leftRightOutlined {
+          margin-top: 5px;
+          display: flex;
+          justify-content: center;
+          column-gap: 40px;
+        }
+        .bottomCircleOutlined {
+          margin-top: 5px;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+    .board {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      .carrialBox {
+        width: 600px;
+        height: 600px;
+        border: 1px solid red;
+      }
+      .boxRelative {
+        position: relative;
+        .boxWrap {
+          border-right: 1px solid $c_border_cell;
+          border-bottom: 1px solid $c_border_cell;
+          .row {
+            .cell {
+              display: inline-block;
+              border-top: 1px solid $c_border_cell;
+              border-left: 1px solid $c_border_cell;
+            }
+          }
+        }
+        .snack {
+          position: absolute;
+          background-color: #00d335b7;
+        }
+        .worm {
+          position: absolute;
+          background-color: rgba(156, 83, 224, 0.699);
+        }
+      }
+    }
+  }
+}
