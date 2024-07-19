@@ -118,6 +118,9 @@ const HomePage = () => {
                 }
               } else {
                 snackRef.current.style.top = `${snackTop - WIDTH_CELL}px`;
+                const snackWidth = snackRef.current.style.width;
+                snackRef.current.style.height = snackWidth;
+                snackRef.current.style.width = `${WIDTH_CELL}px`;
               }
             }
           }
@@ -151,6 +154,9 @@ const HomePage = () => {
                 }
               } else {
                 snackRef.current.style.top = `${snackTop + WIDTH_CELL}px`;
+                const snackWidth = snackRef.current.style.width;
+                snackRef.current.style.height = snackWidth;
+                snackRef.current.style.width = `${WIDTH_CELL}px`;
               }
             }
           }
@@ -184,6 +190,9 @@ const HomePage = () => {
                 }
               } else {
                 snackRef.current.style.left = `${snackLeft - WIDTH_CELL}px`;
+                const snackHeight = snackRef.current.style.height;
+                snackRef.current.style.width = snackHeight;
+                snackRef.current.style.height = `${WIDTH_CELL}px`;
               }
             }
           }
@@ -217,6 +226,9 @@ const HomePage = () => {
                 }
               } else {
                 snackRef.current.style.left = `${snackLeft + WIDTH_CELL}px`;
+                const snackHeight = snackRef.current.style.height;
+                snackRef.current.style.width = snackHeight;
+                snackRef.current.style.height = `${WIDTH_CELL}px`;
               }
             }
           }
